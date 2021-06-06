@@ -42,10 +42,6 @@ const styles = (theme) => ({
     backgroundRepeat: 'no-repeat',
     zIndex: -2,
   },
-  arrowDown: {
-    position: 'absolute',
-    bottom: theme.spacing(4),
-  },
 });
 
 function ProductHeroLayout(props) {
@@ -54,12 +50,6 @@ function ProductHeroLayout(props) {
   return (
     <section className={classes.root}>
       <Container className={classes.container}>
-        <img
-          src="/productHeroWonder.png"
-          alt="wonder"
-          width="147"
-          height="80"
-        />
         {children}
         <div className={classes.backdrop} />
         <div className={clsx(classes.background, backgroundClassName)} />

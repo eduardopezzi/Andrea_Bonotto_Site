@@ -1,6 +1,7 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
+import Box from '@material-ui/core/Box';
 import Container from '@material-ui/core/Container';
 import Typography from '../components/Typography';
 import TextField from '../components/TextField';
@@ -26,7 +27,7 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: theme.palette.secondary.light,
   },
   container: {
-    marginTop: theme.spacing(8),
+    marginTop: theme.spacing(4),
     marginBottom: theme.spacing(8),
     display: 'flex',
   },
@@ -84,7 +85,9 @@ export default function AppFooter() {
             </Grid>
           </Grid>
           <Grid item xs={6} sm={8} md={4}>
+            <Box m={1} />
             <Typography variant='h6'> Contato </Typography>
+            <Box m={2} />
             <MailOutlineIcon />
             <Link href="mailto:andrea@andreabonotto.com.br" target="_blank" variant="inherit" > andrea@andreabonotto.com.br</Link>
           </Grid>

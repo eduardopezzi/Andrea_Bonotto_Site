@@ -34,7 +34,8 @@ function ProductHero(props) {
   return (
     <ProductHeroLayout backgroundClassName={classes.background}>
       {/* Increase the network loading priority of the background image. */}
-      <img style={{ display: 'none' }} src={backgroundImage} alt="increase priority" />    </ProductHeroLayout>
+      <img style={{ display: 'none' }} src={backgroundImage} alt="increase priority" />
+    </ProductHeroLayout>
   );
 }
 
