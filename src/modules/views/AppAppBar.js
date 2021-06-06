@@ -5,19 +5,14 @@ import { withStyles } from "@material-ui/core/styles";
 import AppBar from "../components/AppBar";
 import Toolbar, { styles as toolbarStyles } from "../components/Toolbar";
 import { Link } from "react-router-dom";
-import { Typography } from "@material-ui/core";
 
 const styles = (theme) => ({
-  title: {
-    fontSize: 24,
-    color: theme.palette.common.white,
-  },
   placeholder: toolbarStyles(theme).root,
   toolbar: {
     justifyContent: "space-between",
+    backgroundColor: '#68674B',
   },
   left: {
-    flex: 1,
   },
   leftLinkActive: {
     color: theme.palette.common.white,
@@ -35,6 +30,18 @@ const styles = (theme) => ({
   linkSecondary: {
     color: theme.palette.secondary.main,
   },
+  icon: {
+    width: 36,
+    height: 36,
+    opacity: 0.4,
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    marginRight: theme.spacing(1),
+    '&:hover': {
+      backgroundColor: '#DBC6AB',
+    },
+  },
 });
 
 function AppAppBar(props) {
@@ -46,35 +53,12 @@ function AppAppBar(props) {
         <Toolbar className={classes.toolbar}>
           <div className={classes.left} />
           <Link to={"/"}>
-            <Typography
-              variant="h6"
-              underline="none"
-              color="inherit"
-              className={classes.title}
-            >
-              {"onepirate"}
-            </Typography>
+            <img src="/marca.png" alt="Andrea_Bonotto" style={{ height: '4em' }} />
           </Link>
           <div className={classes.right}>
-            <Link to={"/signin"}>
-              <Typography
-                color="inherit"
-                variant="h6"
-                underline="none"
-                className={classes.rightLink}
-              >
-                {"Sign In"}
-              </Typography>
-            </Link>
-            <Link to={"/signup"}>
-            <Typography
-              variant="h6"
-              underline="none"
-              className={clsx(classes.rightLink, classes.linkSecondary)}
-            >
-              {"Sign Up"}
-            </Typography>
-            </Link>
+            <a href="https://www.instagram.com/deiabonotto/" className={classes.icon}>
+              <img src="/instagram.svg" alt="Instagram" />
+            </a>
           </div>
         </Toolbar>
       </AppBar>

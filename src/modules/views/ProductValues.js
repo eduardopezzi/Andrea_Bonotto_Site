@@ -12,8 +12,8 @@ const styles = (theme) => ({
     backgroundColor: theme.palette.secondary.light,
   },
   container: {
-    marginTop: theme.spacing(15),
-    marginBottom: theme.spacing(30),
+    marginTop: theme.spacing(10),
+    marginBottom: theme.spacing(15),
     display: 'flex',
     position: 'relative',
   },
@@ -53,15 +53,15 @@ function ProductValues(props) {
             <div className={classes.item}>
               <img
                 className={classes.image}
-                src="/productValues1.svg"
-                alt="suitcase"
+                src="/wellness.png"
+                alt="Well Places"
               />
               <Typography variant="h6" className={classes.title}>
-                The best luxury hotels
+                Well Places
               </Typography>
               <Typography variant="h5">
-                {'From the latest trendy boutique hotel to the iconic palace with XXL pool'}
-                {', go for a mini-vacation just a few subway stops away from your home.'}
+                {'Arquitetura com o objetivo é de mostrar formas de morar bem, viver melhor. '}
+                {'Integrando a casa corpo e casa alma em projetos arquitetônicos voltados para o bem-estar.'}
               </Typography>
             </div>
           </Grid>
@@ -69,15 +69,15 @@ function ProductValues(props) {
             <div className={classes.item}>
               <img
                 className={classes.image}
-                src="productValues2.svg"
-                alt="graph"
+                src="/casacoracao.svg"
+                alt="em casa com a deia"
               />
               <Typography variant="h6" className={classes.title}>
-                New experiences
+                Em casa com a Déia
               </Typography>
               <Typography variant="h5">
-                {'Privatize a pool, take a Japanese bath or wake up in 900m2 of garden… '}
-                {'your Sundays will not be alike.'}
+                {'Drops de conteúdo postados no meu perfil do Instagram @AndreaBonotto, trazendo informações e reflexões de como o ambiente nos afetam '}
+                {'Muito conhecimento baseado em fatos e literatura para trazer um novo olhar para a arquitetura'}
               </Typography>
             </div>
           </Grid>
@@ -85,15 +85,15 @@ function ProductValues(props) {
             <div className={classes.item}>
               <img
                 className={classes.image}
-                src="/productValues3.svg"
-                alt="clock"
+                src="/workshop.svg"
+                alt="workshop"
               />
               <Typography variant="h6" className={classes.title}>
-                Exclusive rates
+                Workshops
               </Typography>
               <Typography variant="h5">
-                {'By registering, you will access specially negotiated rates '}
-                {'that you will not find anywhere else.'}
+                {'Momentos de encontro com a Deia para falar sobre a casa corpo casa alma .'}
+                {'Com um grupo limitado de pessoas onde existe trocas e libertação.'}
               </Typography>
             </div>
           </Grid>

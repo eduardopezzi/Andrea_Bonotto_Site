@@ -5,13 +5,15 @@ import Container from '@material-ui/core/Container';
 import Typography from '../components/Typography';
 import TextField from '../components/TextField';
 import { Link } from "react-router-dom";
+import { typography } from 'material-ui/styles';
+import MailOutlineIcon from '@material-ui/icons/MailOutline';
 
 function Copyright() {
   return (
     <React.Fragment>
       {'© '}
       <Link color="inherit" href="https://material-ui.com/">
-        Your Website
+        Andrea Bonotto
       </Link>{' '}
       {new Date().getFullYear()}
     </React.Fragment>
@@ -35,15 +37,14 @@ const useStyles = makeStyles((theme) => ({
     display: 'flex',
   },
   icon: {
-    width: 48,
-    height: 48,
+    width: 40,
+    height: 40,
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: theme.palette.warning.main,
     marginRight: theme.spacing(1),
     '&:hover': {
-      backgroundColor: theme.palette.warning.dark,
+      backgroundColor: '#DBC6AB',
     },
   },
   list: {
@@ -55,22 +56,7 @@ const useStyles = makeStyles((theme) => ({
     paddingTop: theme.spacing(0.5),
     paddingBottom: theme.spacing(0.5),
   },
-  language: {
-    marginTop: theme.spacing(1),
-    width: 150,
-  },
 }));
-
-const LANGUAGES = [
-  {
-    code: 'en-US',
-    name: 'English',
-  },
-  {
-    code: 'fr-FR',
-    name: 'Français',
-  },
-];
 
 export default function AppFooter() {
   const classes = useStyles();
@@ -85,14 +71,11 @@ export default function AppFooter() {
               direction="column"
               justify="flex-end"
               className={classes.iconsWrapper}
-              spacing={2}
+              spacing={3}
             >
               <Grid item className={classes.icons}>
-                <a href="https://material-ui.com/" className={classes.icon}>
-                  <img src="/appFooterFacebook.png" alt="Facebook" />
-                </a>
-                <a href="https://twitter.com/MaterialUI" className={classes.icon}>
-                  <img src="/appFooterTwitter.png" alt="Twitter" />
+                <a href="https://www.instagram.com/deiabonotto/" className={classes.icon}>
+                  <img src="/instagram.svg" alt="Instagram" />
                 </a>
               </Grid>
               <Grid item>
@@ -100,57 +83,12 @@ export default function AppFooter() {
               </Grid>
             </Grid>
           </Grid>
-          <Grid item xs={6} sm={4} md={2}>
-            <Typography variant="h6" marked="left" gutterBottom>
-              Legal
-            </Typography>
-            <ul className={classes.list}>
-              <li className={classes.listItem}>
-                <Link to={"/terms"}>Terms</Link>
-              </li>
-              <li className={classes.listItem}>
-                <Link to={"/privacy"}>Privacy</Link>
-              </li>
-            </ul>
-          </Grid>
           <Grid item xs={6} sm={8} md={4}>
-            <Typography variant="h6" marked="left" gutterBottom>
-              Language
-            </Typography>
-            <TextField
-              select
-              SelectProps={{
-                native: true,
-              }}
-              className={classes.language}
-            >
-              {LANGUAGES.map((language) => (
-                <option value={language.code} key={language.code}>
-                  {language.name}
-                </option>
-              ))}
-            </TextField>
+            <Typography variant='h6'> Contato </Typography>
+            <MailOutlineIcon />
+            <Link href="mailto:andrea@andreabonotto.com.br" target="_blank" variant="inherit" > andrea@andreabonotto.com.br</Link>
           </Grid>
-          <Grid item>
-            <Typography variant="caption">
-              {'Icons made by '}
-              <Link href="https://www.freepik.com" rel="sponsored" title="Freepik">
-                Freepik
-              </Link>
-              {' from '}
-              <Link href="https://www.flaticon.com" rel="sponsored" title="Flaticon">
-                www.flaticon.com
-              </Link>
-              {' is licensed by '}
-              <Link
-                href="https://creativecommons.org/licenses/by/3.0/"
-                title="Creative Commons BY 3.0"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                CC 3.0 BY
-              </Link>
-            </Typography>
+          <Grid item xs={6} sm={4} md={2}>
           </Grid>
         </Grid>
       </Container>

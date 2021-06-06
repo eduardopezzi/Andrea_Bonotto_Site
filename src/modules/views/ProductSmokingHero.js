@@ -11,7 +11,7 @@ const styles = (theme) => ({
     flexDirection: 'column',
     alignItems: 'center',
     marginTop: theme.spacing(9),
-    marginBottom: theme.spacing(9),
+    marginBottom: theme.spacing(4),
   },
   button: {
     border: '4px solid currentColor',
@@ -33,15 +33,14 @@ function ProductSmokingHero(props) {
 
   return (
     <Container className={classes.root} component="section">
-      <Button className={classes.button}>
+      <Button className={classes.button} href="mailto:andrea@andreabonotto.com.br" target="_blank" >
         <Typography variant="h4" component="span">
-          Got any questions? Need help?
+          Quer saber mais?
         </Typography>
       </Button>
       <Typography variant="subtitle1" className={classes.link}>
-        We are here to help. Get in touch!
+        Entre em contato, pois quero saber mais o que você pensa!
       </Typography>
-      <img src="/producBuoy.svg" className={classes.buoy} alt="buoy" />
     </Container>
   );
 }

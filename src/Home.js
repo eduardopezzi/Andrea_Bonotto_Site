@@ -12,8 +12,8 @@ import ProductCTA from "./modules/views/ProductCTA";
 import AppAppBar from "./modules/views/AppAppBar";
 import Privacy from "./Privacy";
 import Terms from "./Terms";
-import SignIn from "./SignIn";
-import SignUp from "./SignUp";
+// import SignIn from "./SignIn";
+// import SignUp from "./SignUp";
 
 function App() {
   return (
@@ -21,12 +21,6 @@ function App() {
       <Switch>
         <Route exact path="/">
           <Index />
-        </Route>
-        <Route path="/signin">
-          <SignIn />
-        </Route>
-        <Route path="/signup">
-          <SignUp />
         </Route>
         <Route path="/terms">
           <Terms />
@@ -45,9 +39,9 @@ function Index() {
       <AppAppBar />
       <ProductHero />
       <ProductValues />
-      <ProductCategories />
-      <ProductHowItWorks />
-      <ProductCTA />
+      {/* <ProductCategories /> */}
+      {/* <ProductHowItWorks /> */}
+      {/* <ProductCTA /> */}
       <ProductSmokingHero />
       <AppFooter />
     </React.Fragment>

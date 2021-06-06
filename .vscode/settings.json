@@ -1,0 +1,21 @@
+{
+    "sqltools.connections": [
+        {
+            "dialect": "Cassandra",
+            "name": "CassandraDB",
+            "password": "145823",
+            "port": 9042,
+            "server": "localhost",
+            "username": "cassandra"
+        },
+        {
+            "database": "producao",
+            "dialect": "Cassandra",
+            "name": "Rufato",
+            "password": "Vieli145823",
+            "port": 9042,
+            "server": "10.147.18.245",
+            "username": "vieli"
+        }
+    ]
+}
