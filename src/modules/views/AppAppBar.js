@@ -4,11 +4,14 @@ import clsx from "clsx";
 import { withStyles } from "@material-ui/core/styles";
 import AppBar from "../components/AppBar";
 import Toolbar, { styles as toolbarStyles } from "../components/Toolbar";
-import { Link } from "react-router-dom";
+import Link from '@material-ui/core/Link';
+import InstagramIcon from '@material-ui/icons/Instagram';
+
 
 const styles = (theme) => ({
   placeholder: toolbarStyles(theme).root,
   toolbar: {
+    width: 'auto',
     justifyContent: "space-between",
     backgroundColor: '#68674B',
   },
@@ -23,7 +26,6 @@ const styles = (theme) => ({
     justifyContent: "flex-end",
   },
   rightLink: {
-    fontSize: 16,
     color: theme.palette.common.white,
     marginLeft: theme.spacing(3),
   },
@@ -31,16 +33,10 @@ const styles = (theme) => ({
     color: theme.palette.secondary.main,
   },
   icon: {
-    width: 36,
-    height: 36,
-    opacity: 0.4,
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
     marginRight: theme.spacing(1),
-    '&:hover': {
-      backgroundColor: '#DBC6AB',
-    },
   },
 });
 
@@ -56,9 +52,9 @@ function AppAppBar(props) {
             <img src="/marca.png" alt="Andrea_Bonotto" style={{ height: '4em' }} />
           </Link>
           <div className={classes.right}>
-            <a href="https://www.instagram.com/deiabonotto/" className={classes.icon}>
-              <img src="/instagram.svg" alt="Instagram" />
-            </a>
+            <Link href="https://www.instagram.com/deiabonotto/" className={classes.icon}>
+              <InstagramIcon color='action' fontSize='large' />
+            </Link>
           </div>
         </Toolbar>
       </AppBar>

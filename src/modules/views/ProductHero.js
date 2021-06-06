@@ -1,20 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
-import Button from '../components/Button';
-import Typography from '../components/Typography';
 import ProductHeroLayout from './ProductHeroLayout';
-import { Link } from "react-router-dom";
 import backgroundImage from '../../resources/capa.png';
 
 const styles = (theme) => ({
   background: {
     backgroundImage: `url(${backgroundImage})`,
-    backgroundColor: '#7fc7d9', // Average color of the background image.
-    backgroundPosition: 'center',
-  },
-  button: {
-    minWidth: 200,
+    backgroundColor: '#A9AD88', // Average color of the background image.
+    backgroundPosition: 'bottom right',
   },
   h5: {
     marginBottom: theme.spacing(4),
