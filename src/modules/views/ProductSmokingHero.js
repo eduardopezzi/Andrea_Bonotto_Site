@@ -12,6 +12,8 @@ const styles = (theme) => ({
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
+    padding: '20px 50px 50px 50px',
+    textAlign: 'center',
   },
   button: {
     border: '2px solid currentColor',
@@ -36,7 +38,8 @@ function ProductSmokingHero(props) {
           Quer saber mais?
         </Typography>
       </Button>
-      <Typography variant="subtitle1" style={{ padding: '20px 50px 30px 50px', textAlign: 'center' }}>
+      <Box m={1} />
+      <Typography variant="subtitle1" >
         {'Meu site está em desenvolvimento! Enquanto isso, você pode mandar um "oi" para saber mais sobre meu trabalho!'}
       </Typography>
     </Container >

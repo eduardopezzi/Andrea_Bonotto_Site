@@ -25,10 +25,6 @@ const styles = (theme) => ({
     display: "flex",
     justifyContent: "flex-end",
   },
-  rightLink: {
-    color: theme.palette.common.white,
-    marginLeft: theme.spacing(3),
-  },
   linkSecondary: {
     color: theme.palette.secondary.main,
   },

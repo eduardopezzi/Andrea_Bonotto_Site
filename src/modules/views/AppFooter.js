@@ -28,9 +28,10 @@ const useStyles = makeStyles((theme) => ({
     display: 'flex',
     alignItems: 'start',
     textAlign: 'center',
+    color: 'white',
   },
   container: {
-    marginTop: theme.spacing(4),
+    marginTop: theme.spacing(6),
     marginBottom: theme.spacing(2),
   },
   Copyright: {
@@ -55,8 +56,8 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   logo: {
-    maxHeight: '10em',
-    maxWidth: '10em',
+    maxHeight: '14em',
+    maxWidth: '14em',
   },
   title: {
     alignItems: 'start',
@@ -72,7 +73,7 @@ export default function AppFooter() {
 
   return (
     <Typography component="footer" className={classes.root}>
-      <Container className={classes.container} maxWidth='lg'>
+      <Container className={classes.container} >
         <Grid
           container
           direction="row-reverse"
@@ -91,22 +92,22 @@ export default function AppFooter() {
               <Box m={2} />
               <Box className={classes.contato} >
                 <MailOutlineIcon />
-                <Link href="mailto:contato@andreabonotto.com.br" target="_blank" variant="inherit" > {'  '}contato@andreabonotto.com.br</Link>
+                <Link href="mailto:contato@andreabonotto.com.br" target="_blank" variant="inherit" color='inherit' > {'  '}contato@andreabonotto.com.br</Link>
               </Box>
               <Box className={classes.contato} >
                 <WhatsAppIcon />
-                <Link href="https://wa.me/5551993991414" variant="inherit" > (51) 99399 1414</Link>
+                <Link href="https://wa.me/5551993991414" variant="inherit" color='inherit'> (51) 99399 1414</Link>
               </Box>
               <Box className={classes.contato} >
                 <InstagramIcon />
-                <Link href="https://www.instagram.com/deiabonotto/" variant="inherit" > @deiabonotto</Link>
+                <Link href="https://www.instagram.com/deiabonotto/" variant="inherit" color='inherit'> @deiabonotto</Link>
               </Box>
             </Box>
           </Grid>
         </Grid>
         <Box className={classes.Copyright} textAlign='center' pt={{ xs: 5, sm: 10 }}>
           {'© '}
-          <Link href="https://www.andreabonotto.com.br/" color='white'>
+          <Link href="https://www.andreabonotto.com.br/" color='inherit'>
             Andrea Bonotto
           </Link >
           {' '}
