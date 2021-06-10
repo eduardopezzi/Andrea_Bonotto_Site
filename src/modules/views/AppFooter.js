@@ -20,8 +20,6 @@ const useStyles = makeStyles((theme) => ({
     fontFamily: 'sans-serif',
     fontSize: '0.9em',
     color: '#E4B996',
-    textAlign: 'center',
-
   },
   contato: {
     height: '35px',
@@ -31,8 +29,8 @@ const useStyles = makeStyles((theme) => ({
     color: 'white',
   },
   container: {
-    marginTop: theme.spacing(6),
-    marginBottom: theme.spacing(2),
+    marginTop: theme.spacing(3),
+    marginBottom: theme.spacing(1),
   },
   Copyright: {
     fontSize: 12,
@@ -80,13 +78,13 @@ export default function AppFooter() {
           justify="space-evenly"
           alignItems="center"
           spacing={9}>
-          <Grid item xs={12} sm={4}>
-            <Box className={classes.bodyText}>
+          <Grid item xs={12} sm={4} >
+            <Box className={classes.bodyText} textAlign='center' >
               <img src={'/marca_AB_transparente.png'} alt='andreabonottologo' className={classes.logo} />
             </Box>
           </Grid>
           <Grid item xs={12} sm={4}>
-            <Box >
+            <Box margin='0px 0px 0px 35px'>
               <Box className={classes.title}> Contato </Box>
               <Box className={classes.bodyText}> MANDE UM ALÔ </Box>
               <Box m={2} />
@@ -105,7 +103,7 @@ export default function AppFooter() {
             </Box>
           </Grid>
         </Grid>
-        <Box className={classes.Copyright} textAlign='center' pt={{ xs: 5, sm: 10 }}>
+        <Box className={classes.Copyright} textAlign='center' >
           {'© '}
           <Link href="https://www.andreabonotto.com.br/" color='inherit'>
             Andrea Bonotto

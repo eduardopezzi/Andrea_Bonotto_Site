@@ -11,7 +11,7 @@ import InstagramIcon from '@material-ui/icons/Instagram';
 const styles = (theme) => ({
   placeholder: toolbarStyles(theme).root,
   toolbar: {
-    width: 'auto',
+    // width: 'auto',
     justifyContent: "space-between",
     backgroundColor: '#68674B',
   },

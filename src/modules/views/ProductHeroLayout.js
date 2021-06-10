@@ -22,6 +22,7 @@ const styles = (theme) => ({
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
+    minHeight: '4em',
   },
   background: {
     position: 'absolute',
