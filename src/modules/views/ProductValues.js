@@ -12,8 +12,8 @@ const styles = (theme) => ({
     backgroundColor: '#E4B996',
   },
   container: {
-    marginTop: theme.spacing(10),
-    marginBottom: theme.spacing(15),
+    marginTop: theme.spacing(4),
+    marginBottom: theme.spacing(10),
     display: 'flex',
     position: 'relative',
   },
@@ -28,8 +28,8 @@ const styles = (theme) => ({
   },
   title: {
     fontFamily: 'serif',
-    marginTop: theme.spacing(5),
-    marginBottom: theme.spacing(5),
+    marginTop: theme.spacing(3),
+    marginBottom: theme.spacing(2),
   },
 });
 
@@ -41,14 +41,14 @@ function ProductValues(props) {
       <Container className={classes.container}>
         <Grid container spacing={5}>
           <Grid item xs={12} md={4}>
-            <div className={classes.item}>
+            <div className={classes.item} >
               <img
                 className={classes.image}
                 src="/wellness.png"
                 alt="Well Places"
               />
               <Typography variant="h6" className={classes.title}>
-                Well Places
+                {"Well Places Well People"}
               </Typography>
               <Typography variant="h5">
                 {'Pela arquitetura, crio experiências de bem estar, fazendo a conexão entre a Casa Alma e '}
